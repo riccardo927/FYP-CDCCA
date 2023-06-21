@@ -39,6 +39,8 @@ class ComplexDeepCCA(nn.Module):
 
         self.loss = cdcca_loss(outdim_size, device).loss
 
+        print("\nIMPORTANT: if you are running on GPU, edit this function accordingly, otherwise ignore this message \n")
+
     def forward(self, x1, x2, device):
         # input1 = torch.randn(x1.size(0),1, dtype=torch.cdouble)
         # input2 = torch.randn(x2.size(0),1, dtype=torch.cdouble)
@@ -49,6 +51,9 @@ class ComplexDeepCCA(nn.Module):
 
         # output1 = self.model1(input1.to(device=device))
         # output2 = self.model2(input2.to(device=device))
+
+        # IMPORTANT: if running with GPU uncomment the above lines
+        # and comment the following two lines, otherwise leave as it is
         output1 = self.model1(x1)
         output2 = self.model2(x2)
 
