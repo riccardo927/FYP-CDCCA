@@ -241,7 +241,7 @@ if __name__ == '__main__':
     start = '1992-01-01'
     end = '2023-01-01'
 
-    #plot_data(tick1, tick2, start, end)
+    plot_data(tick1, tick2, start, end)
 
     view1 = load_data(tick1, start, end)
     view2 = load_data(tick2, start, end)
