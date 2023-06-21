@@ -8,8 +8,8 @@ class cdcca_loss():
 
     def loss(self, H1, H2):
 
-        r1 = 1e-3 + 1j*1e-8
-        r2 = 1e-3 + 1j*1e-8
+        r1 = 1e-3 + 1j*1e-5
+        r2 = 1e-3 + 1j*1e-5
 
         H1, H2 = H1.t(), H2.t()
 
