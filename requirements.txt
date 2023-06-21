@@ -1,0 +1,10 @@
+torch
+numpy 
+scipy
+pandas
+yfinance 
+matplotlib
+sklearn
+logging
+time
+seaborn
