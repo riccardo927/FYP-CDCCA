@@ -8,8 +8,8 @@ class linear_cca():
 
     def fit(self, H1, H2, outdim_size):
 
-        r1 = 1e-4 + 1j*1e-8
-        r2 = 1e-4 + 1j*1e-8
+        r1 = 1e-4 + 1j*1e-6
+        r2 = 1e-4 + 1j*1e-6
 
         m = H1.shape[0]
         o1 = H1.shape[1]
